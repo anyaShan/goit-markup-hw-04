@@ -146,8 +146,11 @@ img {
   content: '';
   margin-right: 10px;
   width: 16px;
-  height: 12px;
+  height: 16px;
   background-image: url(../images/mail-convert.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
 }
 .header-contacts-tel::before {
   display: inline-block;
@@ -156,6 +159,7 @@ img {
   width: 10px;
   height: 16px;
   background-image: url(../images/smartphone.svg);
+  vertical-align: middle;
 }
 
 /* Hero */
