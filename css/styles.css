@@ -297,6 +297,15 @@ footer {
   padding-bottom: 60px;
   background-color: var(--background-accent-color);
 }
+footer > .conteiner {
+  display: flex;
+  align-items: baseline;
+}
+/* Footer address */
+
+.address-content {
+  margin-right: 70px;
+}
 .address-list {
   font-style: normal;
   font-size: 14px;
@@ -321,6 +330,22 @@ footer {
   color: var(--accent-color);
 }
 
+/* Footer links */
+
+.footer-links-caption {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--white-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.footer-links-list {
+  display: flex;
+  width: 206px;
+}
 /* Portfolio navigation*/
 
 .works-nav {
