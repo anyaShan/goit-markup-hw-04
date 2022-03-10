@@ -141,6 +141,22 @@ img {
 .header-contacts > .item + .item {
   margin-left: 50px;
 }
+.header-contacts-mail::before {
+  display: inline-block;
+  content: '';
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  background-image: url(../images/mail-convert.svg);
+}
+.header-contacts-tel::before {
+  display: inline-block;
+  content: '';
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+  background-image: url(../images/smartphone.svg);
+}
 
 /* Hero */
 
