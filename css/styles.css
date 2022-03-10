@@ -200,6 +200,29 @@ img {
 .specifics-item:not(:last-child) {
   margin-right: 30px;
 }
+.specifics-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--background-secondary-color);
+  border-radius: 4px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.specifics-item:nth-child(1)::before {
+  background-image: url(../images/antenna-1.svg);
+}
+.specifics-item:nth-child(2)::before {
+  background-image: url(../images/clock.svg);
+}
+.specifics-item:nth-child(3)::before {
+  background-image: url(../images/diagram.svg);
+}
+.specifics-item:nth-child(4)::before {
+  background-image: url(../images/astronaut.svg);
+}
 .specifics-caption {
   color: var(--secondary-text-color);
   margin-bottom: 10px;
