@@ -319,16 +319,13 @@ img {
   width: 206px;
 }
 .team-links-item {
-  /* width: 44px;
-  height: 44px;
-  outline: 2px solid tomato;
-  border-radius: 50%; */
 }
 .team-links-item:not(:last-child) {
   margin-right: 10px;
 }
 .team-links-icon {
   display: inline-block;
+  background-position: center;
   width: 44px;
   height: 44px;
   outline: 2px solid tomato;
