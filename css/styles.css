@@ -149,7 +149,7 @@ img {
 .header-contacts > .item + .item {
   margin-left: 50px;
 }
-.header-contacts-mail::before {
+/* .header-contacts-mail::before {
   display: inline-block;
   content: '';
   margin-right: 10px;
@@ -168,7 +168,7 @@ img {
   height: 16px;
   background-image: url(../images/smartphone.svg);
   vertical-align: middle;
-}
+} */
 
 /* Hero */
 
@@ -223,7 +223,7 @@ img {
 .specifics-item:not(:last-child) {
   margin-right: 30px;
 }
-.specifics-item::before {
+/* .specifics-item::before {
   display: block;
   content: '';
   height: 120px;
@@ -245,7 +245,7 @@ img {
 }
 .specifics-item:nth-child(4)::before {
   background-image: url(../images/astronaut.svg);
-}
+} */
 .specifics-caption {
   color: var(--secondary-text-color);
   margin-bottom: 10px;
@@ -311,8 +311,21 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 16px;
 }
-
+.team-links-list {
+  display: flex;
+  width: 206px;
+}
+.team-links-item {
+  width: 44px;
+  height: 44px;
+  outline: 2px solid tomato;
+  border-radius: 50%;
+}
+.team-links-item:not(:last-child) {
+  margin-right: 10px;
+}
 /* Clients */
 
 .clients-title {
@@ -322,18 +335,13 @@ img {
   display: flex;
 }
 .clients-item {
-  max-width: 170px;
+  width: 170px;
+  height: 92px;
   border: var(--border-icon);
   border-radius: 4px;
-  padding: 22px 64px;
 }
 .clients-item:not(:last-child) {
   margin-right: 30px;
-}
-.clients-item > span {
-  display: inline-block;
-  width: 41px;
-  height: 47px;
 }
 
 /* Footer */
