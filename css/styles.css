@@ -23,6 +23,7 @@
   --border-secondary: 1px solid #eeeeee;
   --icon-color: #afb1b8;
   --border-icon: 1px solid #afb1b8;
+  --border-icon-accent: 1px solid #2196f3;
   --box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -322,8 +323,9 @@ img {
   margin-right: 10px;
 }
 .team-links-icon {
-  display: block;
-  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -339,6 +341,7 @@ img {
 .team-links-icon:hover .icon {
   fill: var(--background-primary-color);
 }
+
 /* Clients */
 
 .clients-title {
@@ -347,14 +350,29 @@ img {
 .clients-list {
   display: flex;
 }
-.clients-item {
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-links:hover {
+  color: var(--accent-color);
+}
+.clients-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: var(--border-icon);
   border-radius: 4px;
 }
-.clients-item:not(:last-child) {
-  margin-right: 30px;
+.clients-links:hover {
+  border: var(--border-icon-accent);
+}
+.clients-links > .icon {
+  fill: var(--icon-color);
+}
+.clients-links:hover .icon {
+  fill: var(--accent-color);
 }
 
 /* Footer */
@@ -417,8 +435,9 @@ footer > .conteiner {
   margin-right: 10px;
 }
 .footer-links-icon {
-  display: block;
-  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   background-color: var(--background-link-color);
@@ -428,10 +447,10 @@ footer > .conteiner {
 .footer-links-icon:hover {
   background-color: var(--accent-color);
 }
-.footter-links-icon > .icon {
+.footer-links-icon > .icon {
   width: 20px;
   height: 20px;
-  fill: var(--icon-color);
+  fill: var(--background-primary-color);
 }
 
 /* Portfolio navigation*/
