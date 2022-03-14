@@ -59,7 +59,16 @@ img {
   margin: 0;
   list-style: none;
 }
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* LOGO */
 
 .logo-nav,
@@ -205,9 +214,6 @@ img {
 
 /* Specifics */
 
-.specifics-title {
-  display: none;
-}
 .specifics-list {
   display: flex;
 }
@@ -415,9 +421,6 @@ footer > .conteiner {
   display: flex;
   flex-wrap: wrap;
   /* outline: 2px solid tomato; */
-}
-.works-titel {
-  display: none;
 }
 .works-item {
   width: 370px;
