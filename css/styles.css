@@ -318,17 +318,14 @@ img {
   display: flex;
   width: 206px;
 }
-.team-links-item {
-}
 .team-links-item:not(:last-child) {
   margin-right: 10px;
 }
 .team-links-icon {
-  display: inline-block;
-  background-position: center;
+  display: block;
+  padding: 12px;
   width: 44px;
   height: 44px;
-  outline: 2px solid tomato;
   border-radius: 50%;
 }
 .team-links-icon:hover {
@@ -416,15 +413,27 @@ footer > .conteiner {
   display: flex;
   width: 206px;
 }
-.footer-links-item {
+.footer-links-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-links-icon {
+  display: block;
+  padding: 12px;
   width: 44px;
   height: 44px;
   background-color: var(--background-link-color);
   border-radius: 50%;
 }
-.footer-links-item:not(:last-child) {
-  margin-right: 10px;
+
+.footer-links-icon:hover {
+  background-color: var(--accent-color);
 }
+.footter-links-icon > .icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-color);
+}
+
 /* Portfolio navigation*/
 
 .works-nav {
