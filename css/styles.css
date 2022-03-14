@@ -21,6 +21,7 @@
   --address-color: rgba(255, 255, 255, 0.6);
   --border: 1px solid #ececec;
   --border-secondary: 1px solid #eeeeee;
+  --icon-color: #afb1b8;
   --border-icon: 1px solid #afb1b8;
   --box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -318,13 +319,31 @@ img {
   width: 206px;
 }
 .team-links-item {
+  /* width: 44px;
+  height: 44px;
+  outline: 2px solid tomato;
+  border-radius: 50%; */
+}
+.team-links-item:not(:last-child) {
+  margin-right: 10px;
+}
+.team-links-icon {
+  display: inline-block;
   width: 44px;
   height: 44px;
   outline: 2px solid tomato;
   border-radius: 50%;
 }
-.team-links-item:not(:last-child) {
-  margin-right: 10px;
+.team-links-icon:hover {
+  background-color: var(--accent-color);
+}
+.team-links-icon > .icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-color);
+}
+.team-links-icon:hover .icon {
+  fill: var(--background-primary-color);
 }
 /* Clients */
 
