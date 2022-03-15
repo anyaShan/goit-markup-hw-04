@@ -340,7 +340,8 @@ img {
   height: 44px;
   border-radius: 50%;
 }
-.team-links-icon:hover {
+.team-links-icon:hover,
+.team-links-icon:focus {
   background-color: var(--accent-color);
 }
 .team-links-icon > .icon {
@@ -348,7 +349,8 @@ img {
   height: 20px;
   fill: var(--icon-color);
 }
-.team-links-icon:hover .icon {
+.team-links-icon:hover .icon,
+.team-links-icon:focus .icon {
   fill: var(--background-primary-color);
 }
 
@@ -363,7 +365,8 @@ img {
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
-.clients-links:hover {
+.clients-links:hover,
+.clients-links:focus {
   color: var(--accent-color);
 }
 .clients-links {
@@ -375,13 +378,15 @@ img {
   border: var(--border-icon);
   border-radius: 4px;
 }
-.clients-links:hover {
+.clients-links:hover,
+.clients-links:focus {
   border: var(--border-icon-accent);
 }
 .clients-links > .icon {
   fill: var(--icon-color);
 }
-.clients-links:hover .icon {
+.clients-links:hover .icon,
+.clients-links:focus .icon {
   fill: var(--accent-color);
 }
 
@@ -454,7 +459,8 @@ footer > .conteiner {
   border-radius: 50%;
 }
 
-.footer-links-icon:hover {
+.footer-links-icon:hover,
+.footer-links-icon:focus {
   background-color: var(--accent-color);
 }
 .footer-links-icon > .icon {
@@ -476,13 +482,9 @@ footer > .conteiner {
 
 /* Portfolio Works */
 
-/* .warks-page {
-  margin-bottom: -30px;
-} */
 .works-list {
   display: flex;
   flex-wrap: wrap;
-  /* outline: 2px solid tomato; */
 }
 .works-item {
   width: 370px;
