@@ -139,18 +139,28 @@ img {
   display: flex;
   margin-left: auto;
 }
-.header-contacts .link {
-  display: block;
-  padding: 32px 0;
-  color: var(--primary-text-color);
-}
-.header-contacts a:hover,
-.header-contacts a:focus {
-  color: var(--accent-color);
-}
 .header-contacts > .item + .item {
   margin-left: 50px;
 }
+.header-contacts .link {
+  display: flex;
+  padding: 32px 0;
+  color: var(--primary-text-color);
+}
+.header-contacts .link:hover,
+.header-contacts .link:focus {
+  color: var(--accent-color);
+}
+.header-contacts .link > .icon {
+  display: inline-block;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+.header-contacts .link:hover .icon,
+.header-contacts .link:focus .icon {
+  fill: var(--accent-color);
+}
+
 /* .header-contacts-mail::before {
   display: inline-block;
   content: '';
