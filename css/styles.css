@@ -235,6 +235,19 @@ img {
 .specifics-item:not(:last-child) {
   margin-right: 30px;
 }
+.specifics-icon {
+  display: flex;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--background-secondary-color);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+.specifics-icon .icon {
+  width: 70px;
+  height: 70px;
+}
 /* .specifics-item::before {
   display: block;
   content: '';
